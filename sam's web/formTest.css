@@ -1,0 +1,31 @@
+h2{
+text-align: center;
+color: #707070;  
+}
+.fixed-input-box {
+  width: 200px;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding: 3px;
+  border: 1px solid black;
+}
+
+#login-wrapper table{
+    
+    width=400px;   
+}
+
+fieldset{
+   border-style:solid;
+   border-color: #dddddd;
+   border-width:5px;
+   width:400px;
+   margin: auto;
+}
+
+legend {
+  color: #999999;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.0em;
+}

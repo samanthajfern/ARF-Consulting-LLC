@@ -1,0 +1,72 @@
+<html>
+<head>
+
+<title>Javascript Demo 1</title>
+<meta charset="utf-8">
+
+<script type="text/javascript">
+
+function displayText()
+{
+   var inputStr = document.getElementById("userTxtInput").value;
+   alert("user input: "+inputStr);
+   document.getElementById("userTxtDisplay").innerHTML=inputStr;
+}
+
+function displayImg() 
+    {
+
+        document.getElementById("imgDisplay").innerHTML="<img src=' Talosians_3.jpg' width='300px' height='200px'/>"; 
+    }
+    
+function clearImg() 
+    {
+        document.getElementById("imgDisplay").innerHTML="";   
+    }
+</script>
+
+</head>
+<body>
+<!--Your task is to add functionality to display the image below the user text area.
+
+1) Add a paragraph element below the text area with an id named "imgDisplay".
+
+2) After the display text button, add two more buttons: one to display the image,
+   and one to clear the image by setting the inner html of the imgDisplay to "".
+
+   Set the display button with a name of "displayImgBtn", a value of "Display Image",
+   and add an onClick event call to a function called "displayImg()".
+
+   Set the clear button with a name of "clearImgBtn", a value of "Clear Image",
+   and add an onClick event call to a function called "clearImg()".
+
+3) Now write the two functions "displayImg()" and "clearImgBtn".
+
+   For the displayImg function, set the innerHTML to be an image tag with the source being the 
+   image file Talosians_3.jpg, no border, and width of 300 pixels, height of 200 pixels.
+
+   For the clearImg function, set the innerHTML to be the empty string "".
+
+   Remember that you must use single quotes inside a string with double quotes: " blah='0' blahblah='hello' "
+-->
+<h2>Javascript demo </h2>
+
+<label for="userTxt">Enter your text: </label><br>
+
+c
+
+<input type="button" name="displayBtn" value="Display" onclick="displayText()"><br>
+    
+<input type="button" name="displayImgBtn" value="Display Image" onclick="displayImg()"><br>
+    
+<input type="button" name="clearImgBtn" value="Clear Image" onclick="clearImg"><br>
+
+<textarea name="userTxtDisplay" id="userTxtDisplay" rows="4" cols="50">
+Here you will see your text!
+</textarea> 
+
+<p id="imgDisplay"></p>
+
+</body>
+
+</html>

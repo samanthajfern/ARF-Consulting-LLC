@@ -1,0 +1,17 @@
+.par1{
+    color:darkviolet
+}
+.par2{
+    color:fuchsia
+}
+
+table, th, td{
+    
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1em;
+}
+
+th{
+    background-color:darkturquoise;
+}
